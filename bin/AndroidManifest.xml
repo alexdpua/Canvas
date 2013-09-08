@@ -14,13 +14,19 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="ua.Emchigeshev.canvas.MainActivity"
+            android:name="ua.Emchigeshev.canvas.SinglePlayerActivity"
             android:label="@string/app_name" >
+        </activity>
+        <activity android:name="ua.Emchigeshev.canvas.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="ua.Emchigeshev.canvas.ClientActivity" >
+        </activity>
+        <activity android:name="ua.Emchigeshev.canvas.ServerActivity" >
         </activity>
     </application>
 
