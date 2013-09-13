@@ -18,7 +18,7 @@ public class MyView extends View implements View.OnTouchListener {
 	private Paint mLinePaint = new Paint();
 	private float prevX = 0;
 	private boolean isAttached = false;
-	private int points = 0;
+	public int points = 0;
 	private Listener mListener;
 	private float radius = 15;
 
@@ -108,6 +108,7 @@ public class MyView extends View implements View.OnTouchListener {
 	public void pause() {
 		isRunning = false;
 	}
+	SinglePlayerActivity sp = new SinglePlayerActivity();
 
 	public void resume() {
 		isAttached = false;
