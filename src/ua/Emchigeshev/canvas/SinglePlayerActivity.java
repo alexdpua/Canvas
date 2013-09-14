@@ -22,7 +22,8 @@ public class SinglePlayerActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		db = new DB(SinglePlayerActivity.this);
+		setContentView(new CoolView(this));
+		/*db = new DB(SinglePlayerActivity.this);
 		setContentView(R.layout.activity_game);
 		tvScore = (TextView) findViewById(R.id.Points);
 		V = (MyView) findViewById(R.id.MyView);
@@ -33,7 +34,7 @@ public class SinglePlayerActivity extends Activity {
 				tvScore.setText("Score:" + (count - 1));
 
 			}
-		});
+		});*/
 	}
 
 	public DB getDb() {
