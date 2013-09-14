@@ -86,6 +86,7 @@ public class SinglePlayerActivity extends Activity {
 	}
 
 }
+
 /*
  * MainActivity (Client , Server, SinglePlayer)
  * 
